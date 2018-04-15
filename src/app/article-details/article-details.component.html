@@ -1,0 +1,10 @@
+<a [routerLink]="['']" class="btn btn-link"><i class="fa fa-arrow-circle-o-left"></i> Back to Articles</a>
+
+<article>
+  <div class="container">
+    <h1>{{ article.title }}</h1>
+    <p>{{ article.body }}</p>
+  </div>
+</article>
+
+<app-page-not-found *ngIf="error"></app-page-not-found>
